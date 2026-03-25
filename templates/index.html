@@ -1,0 +1,18 @@
+<html>
+<body>
+    <h2>AI Bio Generator</h2>
+    
+    <form method="POST">
+        Name: <input type="text" name="name"><br><br>
+        Role: <input type="text" name="role"><br><br>
+        Hobbies: <input type="text" name="hobbies"><br><br>
+        <input type="submit" value="Generate Bio">
+    </form>
+
+    {% if generated_bio %}
+        <h3>Result:</h3>
+        <p>{{ generated_bio }}</p>
+    {% endif %}
+
+</body>
+</html>
